@@ -1,0 +1,399 @@
+{% comment %}
+    Copyright (C) 2017 Gitcoin Core
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Affero General Public License as published
+    by the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+    GNU Affero General Public License for more details.
+
+    You should have received a copy of the GNU Affero General Public License
+    along with this program. If not,see
+    <http://www.gnu.org/licenses/>.
+
+{% endcomment %}
+{% load i18n static %}
+<!DOCTYPE html>
+<html lang="en">
+
+{% include 'shared/head.html' %}
+{% include 'shared/cards_pic.html' %}
+
+<body class="{{ active }}">
+{% include 'shared/tag_manager_2.html' %}
+<div class="container-fluid header">
+  {% include 'shared/nav.html' %}
+  {% include 'shared/minihero.html' with h1='Mission' position_h1_below_logo=1 %}
+</div>
+
+
+<div class="container-fluid" style="background: white;" id="mission_hero">
+  <div class="row p-5 p-5 animatedParent">
+    <div class="col-12 col-lg-10 offset-md-0 offset-lg-1 d-flex flex-sm-row flex-column text-center animated fadeInLeftShort">
+      <div class="text">
+        <div class="font-bigger-4 header-text">
+          {% blocktrans %}
+          EXITCOIN IS PART OF A
+          <span class="text-highlight-dark-blue">MISSION</span> AND
+          <span class="text-highlight-dark-blue">VALUE-ORIENTED</span>
+          {% endblocktrans %}
+          <br />
+          {% blocktrans %}
+          <span class="text-highlight-dark-blue">
+            DISTRIBUTED MOVEMENT
+          </span> AIMED TO
+          <span class="text-highlight-dark-blue">DRIVE</span>
+          {% endblocktrans %}
+          <br />
+          {% blocktrans %}
+          <span class="text-highlight-dark-blue"> CHANGE </span> AND
+          <span class="text-highlight-pink">GROW OPEN SOURCE AND OPEN MINDS</span>
+          {% endblocktrans %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid" style="background-color: #f2f6f9;" id="we_want">
+  <div class="row">
+    <div class="col pb-4">
+      <h4 class="text-left text-uppercase">
+        {% blocktrans %}
+        <span class="text-highlight-green">We</span> Want
+        {% endblocktrans %}
+      </h4>
+    </div>
+  </div>
+
+  <div class="row animatedParent we-want">
+    <div class="col-md-12 col-lg-8 col-xl-6 animated fadeInLeftShort">
+      <div class="row mb-5">
+        <div class="col-md-10 col-lg-8 d-flex align-items-center">
+          <img
+            class="icon"
+            src="{% static "v2/images/mission/want/rocket_man.svg" %}"
+          />
+          <span class="icon-text">
+          {% blocktrans %}
+          The ethereum blockchain brings significant operational benefits
+Interoperable
+A modular, interoperable platform
+
+Auditable
+An auditable record that can be inspected and used by companies, standards organizations, regulators, and customers alike
+
+
+
+          {% endblocktrans %}
+          </span>
+        </div>
+      </div>
+
+      <div class="row mb-5">
+        <div class="col-md-10 col-lg-8 d-flex align-items-center">
+          <img
+            class="icon"
+            src="{% static "v2/images/mission/want/find_work.svg" %}"
+          />
+          <span class="icon-text">
+          {% blocktrans %}
+
+          Cost-efficient
+          Built on a Public network with aligned incentives.
+
+          Real-time and agile
+          A fast and highly accessible sign-up means quick deployment.
+          {% endblocktrans %}
+          </span>
+        </div>
+      </div>
+
+      <div class="row mb-5">
+        <div class="col-md-10 col-lg-8 d-flex align-items-center">
+          <img
+            class="icon"
+            src="{% static "v2/images/mission/want/incentive.svg" %}"
+          />
+          <span class="icon-text">
+            {% trans "
+            The openness of the platform enables innovation and transparency.
+
+            Guaranteed continuity
+            The elimination of any central operator ensures inclusiveness and longevity." %}
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-none d-lg-block col-md-4 col-lg-4 col-xl-6 animated fadeInDownShort">
+      <div class="falcon-wrapper">
+        <img
+          class="falcon-pull"
+          src="{% static "v2/images/mission/want/falcon_1.svg" %}"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid" style="background-color: #fff;" id="we_value">
+  <div class="row">
+    <div class="col pb-4">
+      <h4 class="text-left text-uppercase">
+        {% blocktrans %}
+        <span class="text-highlight-green">We</span> Value
+        {% endblocktrans %}
+      </h4>
+    </div>
+  </div>
+
+  <div class="row animatedParent mb-5">
+    <div class="col-md-12 col-lg-6">
+      <div class="row">
+        <div class="col-6">
+          <img
+            class="icon-small"
+            src="{% static "v2/images/mission/value/collaborative.svg" %}"
+          />
+
+          <div class="divider"></div>
+
+          <p>{% trans "Collaborative" %}</p>
+        </div>
+
+        <div class="col-6">
+          <img
+            class="icon-small"
+            src="{% static "v2/images/mission/value/love_hands.svg" %}"
+          />
+
+          <div class="divider"></div>
+          <p>{% trans "Intellectual honesty" %}</p>
+        </div>
+      </div>
+
+      <div class="row mb-5 mt-5">
+        <div class="col-6">
+          <img
+            class="icon-small"
+            src="{% static "v2/images/mission/value/humble.svg" %}"
+          />
+
+          <div class="divider"></div>
+
+          <p>{% trans "Humble" %}</p>
+        </div>
+
+        <div class="col-6">
+          <img
+            class="icon-small"
+            src="{% static "v2/images/mission/value/empathetic.svg" %}"
+          />
+
+          <div class="divider"></div>
+
+          <p>{% trans "Empathetic" %}</p>
+        </div>
+      </div>
+
+      <div class="row mb-5 mt-5">
+        <div class="col-6">
+          <img
+            class="icon-small"
+            src="{% static "v2/images/mission/value/stress_reducing.svg" %}"
+          />
+
+          <div class="divider"></div>
+
+          <p>{% trans "Stress Reducing" %}</p>
+        </div>
+
+        <div class="col-6">
+          <img
+            class="icon-small"
+            src="{% static "v2/images/mission/value/inclusive.svg" %}"
+          />
+
+          <div class="divider"></div>
+
+          <p>{% trans "Inclusive" %}</p>
+        </div>
+      </div>
+
+      <div class="row mb-5 mt-5">
+        <div class="col-6">
+          <img
+            class="icon-small"
+            src="{% static "v2/images/mission/value/give_first.svg" %}"
+          />
+
+          <div class="divider"></div>
+          <p>{% trans "Give first" %}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-none d-lg-block col-lg-6 animated fadeInDownShort">
+      <div class="falcon-wrapper">
+        <img
+          class="falcon"
+          src="{% static "v2/images/mission/value/falcon_2.svg" %}"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid" style="background-color: #f2f6f9;" id="we_interact">
+  <div class="row">
+    <div class="col pb-4">
+      <h4 class="text-left text-uppercase">
+        {% blocktrans %}
+        <span class="text-highlight-green">We</span> Interact
+        {% endblocktrans %}
+      </h4>
+    </div>
+  </div>
+
+  <div class="row animatedParent">
+    <div class="col-md-12 col-lg-8 col-xl-6 animated fadeInLeftShort">
+      <div class="row mb-5">
+        <div class="col-md-10 col-lg-8 d-flex align-items-center">
+          <img
+            class="icon"
+            src="{% static "v2/images/mission/interact/world.svg" %}"
+          />
+          <span class="icon-text">
+            {% trans "Happen to the world. Don't let the world happen to you." %}
+          </span>
+        </div>
+      </div>
+
+      <div class="row mb-5">
+        <div class="col-md-10 col-lg-8 d-flex align-items-center">
+          <img class="icon" src="{% static "v2/images/mission/interact/book.svg" %}" />
+          <span class="icon-text">
+            {% trans "Show, don't tell." %}
+          </span>
+        </div>
+      </div>
+
+      <div class="row mb-5">
+        <div class="col-md-10 col-lg-8 d-flex align-items-center">
+          <img
+            class="icon"
+            src="{% static "v2/images/mission/interact/head.svg" %}"
+          />
+          <span class="icon-text">
+            {% trans "Be thoughtful, clear, and direct." %}
+          </span>
+        </div>
+      </div>
+
+      <div class="row mb-5">
+        <div class="col-md-10 col-lg-8 d-flex align-items-center">
+          <img
+            class="icon"
+            src="{% static "v2/images/mission/interact/scale.svg" %}"
+          />
+          <span class="icon-text">
+            {% trans "Find a balance between a proactive and reactive strategy." %}
+          </span>
+        </div>
+      </div>
+
+      <div class="row mb-5">
+        <div class="col-md-10 col-lg-8 d-flex align-items-center">
+          <img
+            class="icon"
+            src="{% static "v2/images/mission/interact/goal.svg" %}"
+          />
+          <span class="icon-text">
+            {% trans "Challenge the status quo / Be willing to be changed." %}
+          </span>
+        </div>
+      </div>
+
+      <div class="row mb-5">
+        <div class="col-md-10 col-lg-8 d-flex align-items-center">
+          <img
+            class="icon"
+            src="{% static "v2/images/mission/interact/hammer.svg" %}"
+          />
+          <span class="icon-text">
+            {% trans "Fix things twice." %}
+          </span>
+        </div>
+      </div>
+
+      <div class="row mb-5">
+        <div class="col-md-10 col-lg-8 d-flex align-items-center">
+          <img
+            class="icon"
+            src="{% static "v2/images/mission/interact/microscope.svg" %}"
+          />
+          <span class="icon-text">
+            {% trans "Identify and validate your assumptions." %}
+          </span>
+        </div>
+      </div>
+
+      <div class="row mb-5">
+        <div class="col-md-10 col-lg-8 d-flex align-items-center">
+          <img
+            class="icon"
+            src="{% static "v2/images/mission/interact/people_care.svg" %}"
+          />
+          <span class="icon-text">
+            {% trans "Care about people (not just tasks)" %}
+          </span>
+        </div>
+      </div>
+
+      <div class="row mb-5">
+        <div class="col-md-10 col-lg-8 d-flex align-items-center">
+          <img
+            class="icon"
+            src="{% static "v2/images/mission/interact/hear.svg" %}"
+          />
+          <span class="icon-text">
+            {% trans "Listen - try to understand one another's ideas. Don't just impose your own." %}
+          </span>
+        </div>
+      </div>
+
+      <div class="row mb-5">
+        <div class="col-md-12 col-lg-8 d-flex align-items-center">
+          <img
+            class="icon"
+            src="{% static "v2/images/mission/interact/swiss_army.svg" %}"
+          />
+          <span class="icon-text">
+            {% trans "Pragmatism over dogmatism." %}
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-none d-lg-block col-md-4 col-lg-4 col-xl-6 animated fadeInDownShort">
+      <div class="falcon-wrapper">
+        <img
+          class="falcon"
+          src="{% static "v2/images/mission/interact/falcon_3.svg" %}"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+{% include 'shared/footer.html' %}
+{% include 'shared/analytics.html' %}
+{% include 'shared/footer_scripts.html' %}
+{% include 'shared/rollbar.html' %}
+{% include 'shared/messages.html' %}
+</body>
+</html>

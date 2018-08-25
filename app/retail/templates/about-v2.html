@@ -1,0 +1,266 @@
+{% comment %}
+  Copyright (C) 2018 Gitcoin Core
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU Affero General Public License as published
+  by the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+  GNU Affero General Public License for more details.
+
+  You should have received a copy of the GNU Affero General Public License
+  along with this program. If not, see <http://www.gnu.org/licenses/>.
+{% endcomment %}
+{% load i18n static %}
+<!DOCTYPE html>
+<html lang="en">
+  {% include 'shared/head.html' %}
+  <head>
+    <link rel="stylesheet" href="{% static "v2/css/about.css" %}"
+  </head>
+  <body class="{{ active }}">
+    {% include 'shared/tag_manager_2.html' %}
+    <div class="container-fluid header">
+      {% include 'shared/nav.html' %}
+      {% include 'shared/minihero.html' with h1='About' %}
+    </div>
+    <div class="container-fluid white-light-bg" style="">
+      <div class="row pb-5 pt-5">
+        <div class="col pb-4">
+          <h4 >{% trans "the problem" %}</h4>
+          <h6 style="text-align: center;" >{% trans "child (and elder) lock test certifications records on ethereum block chain. According to the Colorado Department of Revenue, “Child-Resistant means special packaging that is:
+
+a) designed or constructed to be significantly difficult for children under five years of age to open…
+b) opaque so that the contents cannot be seen through the packaging;
+c) closable for any product intended for more than a single use, or containing multiple servings, and
+d) labeled properly as required by the R 1000 series.
+
+Our zipper locking mechanism will be tested to the child resistant criteria set forth by the Consumer Product Safety Commission as recorded in the code of Federal Regulations found in 16 C.F.R. Part 1700.20. The standard that safety closures adhere, to prevent accidental poisoning, and the poison control act regulation 16 C.F.R. Part 1700.20 that has prevented accidental access by defining the child-resistant standard and the testing required. We will pursue both the standard testing through deploying smart ethereum crypto contracts that demonstrates adhereance and certification
+
+We intend to develop best practices for child-resistant packaging" %}</h6>
+        </div>
+      </div>
+      <div class=" row ">
+        <div class="col pb-4">
+          <div class="align-items-center justify-content-center animatedParent" style="text-align: center;">
+            <img class="animated fadeIn" src="{% static "v2/images/about/problem.png" %}" style="max-width: 100%;">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid " style="background: white;">
+      <div class="row pb-5 pt-5">
+        <div class="col pb-4">
+          <h4>{% trans "The Solution" %}</h4>
+          <h6 style="text-align: center;" >{% trans "A decentralized App for value creation &amp; value capture." %}</h6>
+        </div>
+      </div>
+      <div class=" row ">
+        <div class="col pb-4">
+          <div class="align-items-center justify-content-center animatedParent" style="text-align: center;">
+            <img class="animated fadeIn" src="{% static "v2/images/about/flywheel.png" %}" style="max-width: 100%;">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid white-light-bg font-body"  id="origin_story">
+      <div class="row">
+        <div class="col pb-4">
+          <h4>{% trans "The Origin Story" %} </h4>
+          <p class="font-subheader caption">{% trans "Who, what, when, where, and why." %}</p>
+        </div>
+      </div>
+      <div class="row col-12 offset-lg-1 col-lg-10 animatedParent">
+        <div class="col d-flex flex-column align-items-center animated fadeInLeftShort">
+          <img class="img-fluid" src="{% static "v2/images/why-different/boulder.png" %}" style="margin-top:50px;" />
+          <h4 class="caption font-title">{% trans "Built with &lt;3 in Colorado USA" %}</h4>
+          <p>
+            {% blocktrans %}<strong>eXitcoin</strong> was borne of Colorado's thriving tech scene. One of the most amazing things about the community is the #givefirst mantra. The founding team has built their careers off of advice, mentorship, and relationships in the local tech community.{% endblocktrans %}
+          </p>
+        </div>
+        <div class="col d-flex flex-column align-items-center animated fadeInRightShort">
+          <img class="img-fluid" src="{% static "v2/images/about/grow_open_source.png" %}" />
+          <h4 class="caption font-title">{% trans "Goal: Grow Open Source" %}</h4>
+          <p>
+            {% blocktrans %}<strong>eXitcoin</strong> is a project that combines the #givefirst mantra of the Boulder community with capitalistic incentives to write great software. By enabling <span>Repo Maintainers</span>, <span>developers</span>, and <span>financiers</span> to find one another, Gitcoin grows open source software.{% endblocktrans %}
+          </p>
+        </div>
+      </div>
+      <div class="row col-12 offset-lg-1 col-lg-10 animatedParent">
+        <div class="col d-flex flex-column align-items-center animated fadeInLeftShort">
+          <img class="img-fluid" src="{% static "v2/images/why-different/lock.png" %}" style="margin-top:100px;" />
+          <h4 class="caption font-title">{% trans "Cryptocurrencies provide new, decentralized, opportunities" %}</h4>
+          <p>
+            {% blocktrans %}<strong>Gitcoin</strong> is built upon the Ethereum network, and the solidity smart contract programming language. Ethereum provides opportunities to align incentives across actors in the ecosystem. By programming rights of stakeholders directly into smart contracts, actors are incentivized to provide value, and edge cases are handled _without_ having to involve legacy legal enforcement mechanisms.{% endblocktrans %}
+          </p>
+        </div>
+        <div class="col d-flex flex-column align-items-center animated fadeInRightShort">
+          <img class="img-fluid" src="{% static "v2/images/about/grow_community.png" %}" />
+          <h4 class="caption font-title">Goal: To grow the community</h4>
+          <p>
+          {% blocktrans %}The founder of eXitcoin, <a href="https://www.facebook.com/hemplock/">Paul Weber</a> has the stronger the community is, the more successful open source projects are. The stronger open source projects are, the stronger the community is.{% endblocktrans %}
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="team" class="container-fluid section">
+      {% include 'shared/rain.html' with class="grey" %}
+      <div class="row">
+        <div class="col-12 mb-4">
+          <h4 class="font-heading">{% trans "Team" %}</h4>
+          <p class="font-subheader caption">{% trans "Built By &amp; For Open Source Software Developers" %}</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 offset-lg-2 col-lg-8 row">
+          {% for avatar, name, role, handle, linkedin, feature, food in core_team %}
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card">
+                <img class="avatar" src="{{avatar}}">
+                <p class="name">{{name}}</p>
+                <p class="role font-caption">{{role}}</p>
+                <p class="font-caption">
+                  <span class="title">Favorite Gitcoin Feature</span></br>
+                  <span class="desc">{{feature}}</span>
+                </p>
+                <p class="font-caption">
+                  <span class="title">Favorite Food</span></br>
+                  <span class="desc">{{food}}</span>
+                </p>
+                <div class="social-links">
+                  <a href="https://www.linkedin.com/in/{{linkedin}}"><i class="fab fa-linkedin"></i></a>
+                  <a href="https://gitcoin.co/profile/{{handle}}"><div class="gitcoin-svg"></div></a>
+                  <a href="https://github.com/{{handle}}"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+      {% include 'community.html' with h1="Community"  h2="Gitcoin's Top Community Members" community_members=community_members %}
+      {% include 'community.html' with h1="Alumni"  h2="Community Members that've 'graduated' into more work in the space" community_members=alumni %}
+    </div>
+    <div class="row" id="jobs">
+      <div class="col-12 row section font-body">
+        <div class="col-12">
+          <h4 class="font-heading">{% trans "Join Us" %}</h4>
+          <p class="font-subheader caption" >{% trans "Want to Grow Open Source? We want to hear from you." %}</p>
+        </div>
+        <div class="col-12 col-md-6 left">
+          <p class="font-heading">{% trans "Open Gitcoin Roles" %}</p>
+          <p>
+            {% trans "Front End Developer" %}
+            <a  class="title font-caption" href="https://consensys.net/open-positions/?gh_jid=924578">
+              {% trans "Learn More" %}
+            </a>
+          </p>
+          <p>
+            {% trans "Technical Business Development Lead" %}
+            <a  class="title font-caption" href="https://consensys.net/open-positions/?gh_jid=1025695">
+              {% trans "Learn More" %}
+            </a>
+          </p>
+          <p>
+            {% trans "Technical Project Manager" %}
+            <a class="title font-caption" href="mailto:founders@gitcoin.co">
+              {% trans "Contact us" %}
+            </a>
+          </p>
+        </div>
+        <div class="col-12 col-md-6 right">
+          <p class="font-heading">{% trans "Open Bounties.Network Roles" %}</p>
+          <p>
+            {% trans "Data Scientist" %}
+            <a class="title font-caption" href="https://consensys.net/open-positions/?gh_jid=945245">
+              {% trans "Learn More" %}
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id='note'>
+    &nbsp;
+  </div>
+    <div class="container-fluid text-center white-light-bg" id="features">
+      <div class="row pb-1 pt-4">
+        <div class="col text-center">
+          <h4 class="">{% trans "Features of Gitcoin" %}</h4>
+        </div>
+      </div>
+      <div class="row pt-5 mb-3 animatedParent">
+        <div class="col d-flex flex-column align-items-center animated fadeInLeftShort">
+          <div class="explain-img-wrapper mb-3 d-flex justify-content-center align-items-center">
+            <img src="{% static "v2/images/getgitcoin/spaceship.png" %}" />
+          </div>
+          <div class="pl-5 pr-5 w-75">
+            <div class="font-bigger-1">{% trans "Fund Issues" %}</div>
+            <div class="font-smaller-3">{% trans "Fund a feature, bug, or security issue that you care about, &amp; get results." %}</div>
+          </div>
+        </div>
+        <div class="col d-flex flex-column align-items-center animated fadeInRightShort">
+          <div class="explain-img-wrapper mb-3 d-flex justify-content-center align-items-center">
+            <img src="{% static "v2/images/getgitcoin/tip-dev.png" %}" />
+          </div>
+          <div class="pl-5 pr-5 w-75">
+            <div class="font-bigger-1">{% trans "Tip Developers" %}</div>
+            <div class="font-smaller-3">{% trans "Reward contributors who have added value to your repository with a tip." %}</div>
+          </div>
+        </div>
+      </div>
+      <div class="row pt-5 mb-3 animatedParent">
+          <div class="col d-flex flex-column align-items-center animated fadeInLeftShort">
+            <div class="explain-img-wrapper mb-3 d-flex justify-content-center align-items-center">
+              <img src="{% static "v2/images/getgitcoin/find-work.png" %}" />
+            </div>
+            <div class="pl-5 pr-5 w-75">
+              <div class="font-bigger-1">{% trans "Find Work" %}</div>
+              <div class="font-smaller-3">{% trans "Find interesting projects to work on, interesting people to work with. Try projects before you fully commit to them. Add value wherever you go." %}</div>
+            </div>
+          </div>
+          <div class="col d-flex flex-column align-items-center animated fadeInRightShort">
+            <div class="explain-img-wrapper mb-3 d-flex justify-content-center align-items-center">
+              <img src="{% static "v2/images/getgitcoin/github.png" %}" />
+            </div>
+            <div class="pl-5 pr-5 w-75">
+              <div class="font-bigger-1">{% trans "All on Github.com" %}</div>
+              <div class="font-smaller-3">{% trans "The best thing about Gitcoin is that it works where you do your work; on Github." %}</div>
+            </div>
+          </div>
+      </div>
+      <div class="row mt-5 pb-3 animatedParent">
+        <div class="col animated pulse fast">
+          <a class="btn btn-lg btn-warning" role="button" href="{% url "get_gitcoin" %}">{% trans "Get Started" %}</a>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid text-center white-light-bg" id="gitcoin_buttons">
+      <div class="row">
+        <div class="col pb-4">
+          <h4 >{% trans "Mission-Driven" %}</h4>
+          <h6 style="text-align: center;" >{% trans "Everything we do is to support our mission to 'Grow Open Source'" %}  </h6>
+        </div>
+      </div>
+      <div class=" row animatedParent grow_hero">
+        <div class="col d-flex flex-column p-5 animated fadeIn ">
+          <div class="pl-5 pr-5" style="text-align: center;">
+            <img src="{% static "v2/images/mission/grow_hero.png" %}" />
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5 pb-3 animatedParent">
+        <div class="col animated pulse fast">
+          <a class="btn btn-lg btn-warning" role="button" href="{% url "get_gitcoin" %}">{% trans "Get Started" %}</a>
+        </div>
+      </div>
+    </div>
+    {% include 'shared/footer.html' %}
+    {% include 'shared/analytics.html' %}
+    {% include 'shared/footer_scripts.html' %}
+    {% include 'shared/rollbar.html' %}
+    {% include 'shared/messages.html' %}
+  </body>
+</html>

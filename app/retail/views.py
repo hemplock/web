@@ -132,15 +132,6 @@ def about(request):
             "The Community",
             "Cocktail Samosa"
         ),
-        (
-            static("v2/images/team/saptaks.jpg"),
-            "Saptak Sengupta",
-            "Engineering",
-            "saptaks",
-            "saptaks",
-            "Everything Open Source",
-            "daab chingri"
-        ),
     ]
     exclude_community = ['kziemiane', 'owocki', 'mbeacom']
     community_members = [

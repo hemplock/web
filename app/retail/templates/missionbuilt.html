@@ -1,0 +1,451 @@
+{% comment %}
+   hempBLOCK eXitcoin hemplock@pauljweber.net
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Affero General Public License as published
+    by the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+    GNU Affero General Public License for more details.
+
+    You should have received a copy of the GNU Affero General Public License
+    along with this program. If not,see
+    <http://www.gnu.org/licenses/>.
+
+{% endcomment %}
+{% load i18n static %}
+<!DOCTYPE html>
+<html lang="en">
+
+{% include 'shared/head.html' %}
+{% include 'shared/cards_pic.html' %}
+
+<body class="{{ active }}">
+{% include 'shared/tag_manager_2.html' %}
+<div class="container-fluid header">
+  {% include 'shared/nav.html' %}
+  {% include 'shared/minihero.html' with h1='Mission' position_h1_below_logo=1 %}
+</div>
+
+
+<div class="container-fluid" style="background: white;" id="mission_hero">
+  <div class="row p-5 p-5 animatedParent">
+    <div class="col-12 col-lg-10 offset-md-0 offset-lg-1 d-flex flex-sm-row flex-column text-center animated fadeInLeftShort">
+      <div class="text">
+
+        <div class="font-bigger-4 header-text">
+          {% blocktrans %}
+          hempBLOCK EXITCOIN IS PART OF A
+          <span class="text-highlight-dark-blue">MISSION</span> AND
+          <span class="text-highlight-dark-blue">VALUE-ORIENTED</span>
+          {% endblocktrans %}
+          <br />
+          {% blocktrans %}
+          <span class="text-highlight-dark-blue">
+            DISTRIBUTED MOVEMENT
+          </span> AIMED TO
+          <span class="text-highlight-dark-blue">DRIVE</span>
+          {% endblocktrans %}
+          <br />
+          {% blocktrans %}
+          <span class="text-highlight-dark-blue"> CHANGE </span> BY
+          <span class="text-highlight-pink">cultivating </span> AND
+          <span class="text-highlight-pink">encouraging OPEN MINDS</span>
+          {% endblocktrans %}
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" style="background-color: #f2f6f9;" id="we_want">
+  <div class="row">
+    <div class="col pb-4">
+      <h4 class="text-left text-uppercase">
+        {% blocktrans %}
+        <span class="text-highlight-green">We</span> Want
+        {% endblocktrans %}
+      </h4>
+    </div>
+  </div>
+
+  <div class="row animatedParent we-want">
+    <div class="col-md-12 col-lg-8 col-xl-6 animated fadeInLeftShort">
+      <div class="row mb-5">
+        <div class="col-md-10 col-lg-8 d-flex align-items-center">
+          <img
+            class="icon"
+            src="{% static "v2/images/mission/want/rocket_man.svg" %}"
+          />
+          <span class="icon-text">
+          {% blocktrans %}
+              We want to CERTIFY Tests of child resistance as specified by Consumer Product Safety Commission requirements for Child-Resistant Packaging. We will save the RECORDs of child lock tests and the applicable Senior-adult tests as auditable Etherium blockchain records that can be inspected and used by companies, standards organizations, regulators, and our customers.
+          {% endblocktrans %}
+          </span>
+        </div>
+      </div>
+
+      <div class="row mb-5">
+        <div class="col-md-10 col-lg-8 d-flex align-items-center">
+          <img
+            class="icon"
+            src="{% static "v2/images/mission/want/find_work.svg" %}"
+          />
+          <span class="icon-text">
+          {% blocktrans %}
+            Real-time, agile and highly accessible Etherium ERC20-compliant token compensation.
+          {% endblocktrans %}
+          </span>
+        </div>
+      </div>
+
+      <div class="row mb-5">
+        <div class="col-md-10 col-lg-8 d-flex align-items-center">
+          <img
+            class="icon"
+            src="{% static "v2/images/mission/want/incentive.svg" %}"
+          />
+          <span class="icon-text">
+            {% trans ""built on the ethereum blockchain network with Ethereum blockchain ERC20-compliant tokens as incentives for testers, supporters and certifiers."" %}
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-none d-lg-block col-md-4 col-lg-4 col-xl-6 animated fadeInDownShort">
+      <div class="falcon-wrapper">
+        <img
+          class="falcon-pull"
+          src="{% static "v2/images/mission/want/falcon_1.svg" %}"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+{% comment %}
+<div class="container-fluid" style="background-color: #f2f6f9;" id="we_want">
+  <div class="row">
+    <div class="col pb-4">
+      <h4 class="text-left text-uppercase">
+        {% blocktrans %}
+        <span class="text-highlight-green">We</span> Want
+        {% endblocktrans %}
+      </h4>
+    </div>
+  </div>
+
+  <div class="row animatedParent we_want">
+    <div class="col-md-12 col-lg-8 col-xl-6 animated fadeInLeftShort">
+      <div class="row mb-5">
+        <div class="col-md-10 col-lg-8 d-flex align-items-center">
+          <img
+            class="icon"
+            src="{% static "v2/images/mission/want/rocket_man.svg" %}"
+          />
+          <span class="icon-text">
+          {% blocktrans %}
+                "We want to CERTIFY Tests of child resistance as specified by Consumer Product Safety Commission requirements for Child-Resistant Packaging. We will save the RECORDs of child lock tests and the applicable Senior-adult tests as auditable Etherium blockchain records that can be inspected and used by companies, standards organizations, regulators, and our customers."
+          {% endblocktrans %}
+          </span>
+        </div
+      </div>
+
+      <div class="row mb-5">
+        <div class="col-md-10 col-lg-8 d-flex align-items-center">
+          <img
+            class="icon"
+            src="{% static "v2/images/mission/want/find_work.svg" %}"
+          />
+          <span class="icon-text">
+          {% blocktrans %}
+            "Real-time, agile, and highly accessible Etherium ERC20-compliant token compensation."
+            {% endblocktrans %}
+          </span>
+        </div>
+      </div>
+
+      <div class="row mb-5">
+        <div class="col-md-10 col-lg-8 d-flex align-items-center">
+          <img
+            class="icon"
+            src="{% static "v2/images/mission/want/incentive.svg" %}"
+          />
+          <span class="icon-text">
+             {% blocktrans %} "built on the ethereum blockchain network with Ethereum blockchain ERC20-compliant tokens as incentives for testers, supporters and certifiers." {% endblocktrans %}
+        </div>
+      </div>
+    </div>
+
+    <div class="d-none d-lg-block col-md-4 col-lg-4 col-xl-6 animated fadeInDownShort">
+      <div class="falcon-wrapper">
+        <img
+          class="falcon-pull"
+          src="{% static "v2/images/mission/want/falcon_1.svg" %}"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+{% endcomment %}
+<div class="container-fluid" style="background-color: #fff;" id="we_value">
+  <div class="row">
+    <div class="col pb-4">
+      <h4 class="text-left text-uppercase">
+        {% blocktrans %}
+        <span class="text-highlight-green">We</span> Value
+        {% endblocktrans %}
+      </h4>
+    </div>
+  </div>
+
+  <div class="row animatedParent mb-5">
+    <div class="col-md-12 col-lg-6">
+      <div class="row">
+        <div class="col-6">
+          <img
+            class="icon-small"
+            src="{% static "v2/images/mission/value/collaborative.svg" %}"
+          />
+
+          <div class="divider"></div>
+
+          <p>{% trans "Collaborative" %}</p>
+        </div>
+
+        <div class="col-6">
+          <img
+            class="icon-small"
+            src="{% static "v2/images/mission/value/love_hands.svg" %}"
+          />
+
+          <div class="divider"></div>
+          <p>{% trans "Intellectual honesty" %}</p>
+        </div>
+      </div>
+
+      <div class="row mb-5 mt-5">
+        <div class="col-6">
+          <img
+            class="icon-small"
+            src="{% static "v2/images/mission/value/humble.svg" %}"
+          />
+
+          <div class="divider"></div>
+
+          <p>{% trans "Humble" %}</p>
+        </div>
+
+        <div class="col-6">
+          <img
+            class="icon-small"
+            src="{% static "v2/images/mission/value/empathetic.svg" %}"
+          />
+
+          <div class="divider"></div>
+
+          <p>{% trans "Empathetic" %}</p>
+        </div>
+      </div>
+
+      <div class="row mb-5 mt-5">
+        <div class="col-6">
+          <img
+            class="icon-small"
+            src="{% static "v2/images/mission/value/stress_reducing.svg" %}"
+          />
+
+          <div class="divider"></div>
+
+          <p>{% trans "Never give up." %}</p>
+        </div>
+
+        <div class="col-6">
+          <img
+            class="icon-small"
+            src="{% static "v2/images/mission/value/inclusive.svg" %}"
+          />
+
+          <div class="divider"></div>
+
+          <p>{% trans "Inclusive" %}</p>
+        </div>
+      </div>
+
+      <div class="row mb-5 mt-5">
+        <div class="col-6">
+          <img
+            class="icon-small"
+            src="{% static "v2/images/mission/value/give_first.svg" %}"
+          />
+
+          <div class="divider"></div>
+          <p>{% trans "Give first" %}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-none d-lg-block col-lg-6 animated fadeInDownShort">
+      <div class="falcon-wrapper">
+        <img
+          class="falcon"
+          src="{% static "v2/images/mission/value/falcon_2.svg" %}"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid" style="background-color: #f2f6f9;" id="we_interact">
+  <div class="row">
+    <div class="col pb-4">
+      <h4 class="text-left text-uppercase">
+        {% blocktrans %}
+        <span class="text-highlight-green">We</span> Interact
+        {% endblocktrans %}
+      </h4>
+    </div>
+  </div>
+
+  <div class="row animatedParent">
+    <div class="col-md-12 col-lg-8 col-xl-6 animated fadeInLeftShort">
+      <div class="row mb-5">
+        <div class="col-md-10 col-lg-8 d-flex align-items-center">
+          <img
+            class="icon"
+            src="{% static "v2/images/mission/interact/world.svg" %}"
+          />
+          <span class="icon-text">
+            {% trans "Don't let the world happen to you. Let yourself change to the world..." %}
+          </span>
+        </div>
+      </div>
+
+      <div class="row mb-5">
+        <div class="col-md-10 col-lg-8 d-flex align-items-center">
+          <img class="icon" src="{% static "v2/images/mission/interact/book.svg" %}" />
+          <span class="icon-text">
+            {% trans "Show and Tell...Code and Comment" %}
+          </span>
+        </div>
+      </div>
+
+      <div class="row mb-5">
+        <div class="col-md-10 col-lg-8 d-flex align-items-center">
+          <img
+            class="icon"
+            src="{% static "v2/images/mission/interact/head.svg" %}"
+          />
+          <span class="icon-text">
+            {% trans "Be clear, thoughtful and direct..." %}
+          </span>
+        </div>
+      </div>
+
+      <div class="row mb-5">
+        <div class="col-md-10 col-lg-8 d-flex align-items-center">
+          <img
+            class="icon"
+            src="{% static "v2/images/mission/interact/scale.svg" %}"
+          />
+          <span class="icon-text">
+            {% trans "Find a balance between a proactive and reactive strategy." %}
+          </span>
+        </div>
+      </div>
+
+      <div class="row mb-5">
+        <div class="col-md-10 col-lg-8 d-flex align-items-center">
+          <img
+            class="icon"
+            src="{% static "v2/images/mission/interact/goal.svg" %}"
+          />
+          <span class="icon-text">
+            {% trans "Challenge the status quo / Be willing to be changed / Be willing to be the change..." %}
+          </span>
+        </div>
+      </div>
+
+      <div class="row mb-5">
+        <div class="col-md-10 col-lg-8 d-flex align-items-center">
+          <img
+            class="icon"
+            src="{% static "v2/images/mission/interact/hammer.svg" %}"
+          />
+          <span class="icon-text">
+            {% trans "Measure twice, cut once...." %}
+          </span>
+        </div>
+      </div>
+
+      <div class="row mb-5">
+        <div class="col-md-10 col-lg-8 d-flex align-items-center">
+          <img
+            class="icon"
+            src="{% static "v2/images/mission/interact/microscope.svg" %}"
+          />
+          <span class="icon-text">
+            {% trans "Identify and validate your assumptions. Look closely / utilize a second set of eyes ..." %}
+          </span>
+        </div>
+      </div>
+
+      <div class="row mb-5">
+        <div class="col-md-10 col-lg-8 d-flex align-items-center">
+          <img
+            class="icon"
+            src="{% static "v2/images/mission/interact/people_care.svg" %}"
+          />
+          <span class="icon-text">
+            {% trans "Care about people first and tasks second..." %}
+          </span>
+        </div>
+      </div>
+
+      <div class="row mb-5">
+        <div class="col-md-10 col-lg-8 d-flex align-items-center">
+          <img
+            class="icon"
+            src="{% static "v2/images/mission/interact/hear.svg" %}"
+          />
+          <span class="icon-text">
+            {% trans "Listen with the intention to understand one another's ideas..." %}
+          </span>
+        </div>
+      </div>
+
+      <div class="row mb-5">
+        <div class="col-md-12 col-lg-8 d-flex align-items-center">
+          <img
+            class="icon"
+            src="{% static "v2/images/mission/interact/swiss_army.svg" %}"
+          />
+          <span class="icon-text">
+            {% trans "Karmic pragmatism over dogmatism." %}
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-none d-lg-block col-md-4 col-lg-4 col-xl-6 animated fadeInDownShort">
+      <div class="falcon-wrapper">
+        <img
+          class="falcon"
+          src="{% static "v2/images/mission/interact/falcon_3.svg" %}"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+{% include 'shared/footer.html' %}
+{% include 'shared/analytics.html' %}
+{% include 'shared/footer_scripts.html' %}
+{% include 'shared/rollbar.html' %}
+{% include 'shared/messages.html' %}
+</body>
+</html>
